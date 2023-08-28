@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+  background-color: #0B4619;
+}
+
+.forgot-form, .forgot-form2 {
+    width: 300px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #0B4619;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Montserrat;
+    
+}
+
+.forgot-form h1, .forgot-form2 h1 {
+    
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.forgot-form label, .forgot-form2 label {
+  display: block;
+  margin: 20px 0 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.forgot-form input[type="email"], .forgot-form2 input[type="email"] {
+    display: block;
+    width: 100%;
+    margin: 5px 0 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    outline: none;
+    text-align: center;
+    font-family: Montserrat;
+  }
+  
+  .forgot-form input[type="text"], .forgot-form2 input[type="text"] {
+      display: block;
+      width: 100%;
+      margin: 5px 0 20px;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #111;
+      border: 2px solid #fff;
+      border-radius: 50px;
+      outline: none;
+      text-align: center;
+    font-family: Montserrat;
+  }
+  
+
+.forgot-form button[type="submit"], .forgot-form2 button[type="submit"], .forgot-form2 button[type="button"], .forgot-form button[type="button"] {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ffb100;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Montserrat;
+}
+
+.forgot-form button[type="submit"]:hover, .forgot-form2 button[type="submit"]:hover, .forgot-form2 button[type="button"]:hover, .forgot-form button[type="button"]:hover {
+  background-color: #e68a00;
+}
+
+#change, #change2 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ffb100;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+
+@media(min-width:1000px){
+
+    .forgot-form, .forgot-form2 {
+        width: 500px;
+    }
+
+    .forgot-form h1, .forgot-form2 h1 {
+    
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    .forgot-form label, .forgot-form2 label {
+      display: block;
+      margin: 20px 0 5px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #fff;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    
+    .forgot-form input[type="email"], .forgot-form2 input[type="email"] {
+      display: block;
+      width: 100%;
+      margin: 5px 0 20px;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #111;
+      border: 2px solid #fff;
+      border-radius: 50px;
+      outline: none;
+      text-align: center;
+      font-family: Montserrat;
+    }
+    
+    .forgot-form input[type="text"], .forgot-form2 input[type="text"] {
+        display: block;
+        width: 100%;
+        margin: 5px 0 20px;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #111;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        outline: none;
+        text-align: center;
+      font-family: Montserrat;
+    }
+
+    .forgot-form::placeholder, .forgot-form2::placeholder{
+        text-align: center;
+
+    }
+      
+    
+    .forgot-form button[type="submit"], .forgot-form2 button[type="submit"], .forgot-form2 button[type="button"], .forgot-form button[type="button"] {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      background-color: #ffb100;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+    
+    .forgot-form button[type="submit"]:hover, .forgot-form2 button[type="submit"]:hover, .forgot-form2 button[type="button"]:hover, .forgot-form button[type="button"]:hover {
+      background-color: #e68a00;
+    }
+    
+    #change, #change2 {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #ffb100;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-align: center;
+    }
+}

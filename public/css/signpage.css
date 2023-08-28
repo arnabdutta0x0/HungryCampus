@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;700;900&display=swap');
+
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        padding:0;
+        margin: 0;
+        font-family: Montserrat;
+        
+    }
+
+    .container{
+        border:none;
+        margin:none;
+    }
+
+    #p{
+        font-size: 35px;
+        font-weight:bold;
+    }
+
+    #tt{
+        text-align:center;
+        font-size:18px;
+        color:#ffffff;
+        font-weight:700;
+    }
+
+    /* menu btn styling */
+
+    .scroll-up-btn{
+        position: fixed;
+        height: 45px;
+        width: 42px;
+        background: #ffb100;
+        right: 30px;
+        bottom: 10px;
+        text-align: center;
+        line-height: 45px;
+        color: #ffffff;
+        z-index: 9999;
+        font-size: 30px;
+        border-radius: 6px;
+        border-bottom-width: 2px;
+        cursor: pointer;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+    .scroll-up-btn.show{
+        bottom: 30px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .scroll-up-btn:hover{
+        filter: brightness(90%);
+    }
+
+
+
+    /*------ Navbar section ------*/
+
+
+
+.nav {
+    list-style: none;
+    text-decoration: none;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    margin-top: 0px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.nav li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 25px;
+}
+.nav li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: 0.5s;
+    color: #000;
+    font-weight: 600;
+}
+.nav:hover li a {
+    color: #000;
+}
+.nav:hover li a:not(:hover) {
+    color: #000;
+    opacity: 0.3;
+}
+
+
+
+/* Home section */
+.home {
+    justify-content: center;
+    align-items: center;
+    background-image: url("/image/wel2.jpg");
+    background-size: 100%;
+    height: 90vh;
+    margin: 0px 15px 15px 15px;
+}
+
+.home-down{
+    text-align: center;
+    justify-content: center;
+    padding-top: 220px;
+    margin: 0px 0px 0px 0px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+#h2{
+    padding: 5px 13px 50px 13px;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    background-color: #f5dbc4;
+}
+  
+
+    
+    /*------ Login Section ------*/
+
+.login-left{
+
+    text-align: justify;
+    text-align:center;
+    background-color:#ffffff;
+    padding-top: 45%;
+    padding-bottom: 45%;
+}
+
+.login-right{
+    text-align: justify;
+    flex-direction:column;
+    justify-content:center;
+    background-color:#D21312; 
+    padding-top:20%;
+    padding-bottom:25%;
+    
+}
+
+.book{
+    font-size:20px;
+}
+
+.log{
+    text-align: center;
+    font-size:20px;
+    color:#ffffff;
+}
+
+.form-item,.login-form-footer{
+    text-align: center;
+    font-size:medium;
+}
+
+
+.login-form-content{
+    font-size:15px;
+    padding-left:50px;
+    padding-right:50px;
+    color:#ffffff;
+    font-weight:500;
+}
+
+.login-form-footer a {
+    padding: 10px;
+    border-radius:30px;
+    margin:10px;
+    
+    text-align: center;
+    line-height: 60px; 
+    
+    color:#ffffff;
+    font-weight:500;
+    font-size:12px;
+    align-content:center;
+    
+}
+
+.login-form-footer a img {
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-right:5px;
+}
+
+.login-form-footer a {
+    
+    background-color: #ffffff;
+    color: #111;
+    text-decoration:none;
+}
+
+.field{
+    
+    text-align:center;
+    padding-bottom:10px;
+    padding-top:20px;
+}
+
+.input{
+    height:40px;
+    width:80%;
+    border: none;
+    outline:none;
+    border-radius:30px;
+    text-align:center;
+    font-family: Montserrat;
+    font-weight:bold;
+    background-color:#D21312; 
+    color:#ffffff;
+    border: 2px solid #ccc;
+}
+
+#fp{
+    color: #fff;
+    text-decoration: none;
+}
+
+::placeholder{
+    color:#ffffff;
+    opacity:.5;
+}
+
+.but{
+    height:40px;
+    width:50%;
+    border: 2px solid;
+    outline:none;
+    border-radius:30px;
+    text-align:center;
+    font-family: Montserrat;
+    font-weight:bold;
+    background-color:#ffffff;
+    color:#D21312; 
+    
+}
+
+.but:hover{
+    background-color:#D21312; 
+    transition: 0ms;
+    border:2px solid #ffffff;
+    color: #ffffff;
+}
+
+.rem{
+    width:15px;
+    height:15px;
+    vertical-align: middle;
+    margin-bottom: 7px;
+    margin-right:5px;
+}
+
+.toggle{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.new{
+    position: relative;
+    font-size: 1.2em;
+    padding: 10px 20px 10px;
+    background-color: #D21312; 
+    text-decoration: none;
+    border: none;
+    color: #DEDEDE;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0.3, 0.3, 0.3, 0.3);
+}
+
+.new::before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+  
+.new:hover::before {
+    width: 1.6em;
+    height: 1.6em;
+}
+
+.new:active {
+    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+    transform: translate(0.1em, 0.1em);
+}
+
+
+
+
+/*------ Team Section ------*/
+
+.tag{
+    padding-top:10%;
+    border:none;
+    justify-content:center;
+    text-align:center;
+    margin: 0 30px 0;
+    color:#ffffff;
+}
+
+.team{
+    background-color:#0B4619;
+    height:100vh;
+    width:100%;
+}
+
+#name{
+    font-size: 15px;
+}
+
+#arnab,#sourav{
+    width:130px;
+    height:130px;
+}
+
+#sahil,#subham{
+    width:130px;
+    height:130px;
+}
+
+#subhra,#soumyajit{
+    width:130px;
+    height:130px;
+}
+
+.team-left{
+    display:flex;
+    justify-content:center;
+    background-color:#0B4619;
+    padding-top:0%;
+    padding-bottom:20%;
+}
+
+.team-right{
+    padding-top:1%;
+    margin:30px;
+    text-align:justify;
+    justify-content:center;
+    background-color:#ffffff;
+    padding-bottom:10%;
+}
+
+.team-vision{
+    padding-top:7%;
+    padding-bottom:10%;
+}
+
+#social{
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#social2{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social{
+    text-align: center;
+}
+
+.box{
+    width:max-content;
+    text-align:center;
+    padding-bottom: 5px;
+    background-color:#0B4619;
+    margin:30px 20px 30px;
+    border:2px solid #ffffff;
+}
+
+
+#name{
+    color:#ffffff;
+}
+
+#msg{
+    font-size:35px;
+    text-align:center;
+    color:#0B4619;
+}
+
+#tp{
+    line-height:1.5;
+    font-size:16px;
+    color:#0B4619;
+    font-weight:500;
+}
+
+
+/*------Responsive Web------*/
+
+@media(min-width:1000px){
+
+
+#p{
+    font-size: 40px;
+    font-weight:bold;
+}
+
+
+/*------ Home Section------*/
+
+.home {
+    justify-content: center;
+    align-items: center;
+    background-image: url("/image/wel2.jpg");
+    background-position:top;
+   
+    background-size: 100%;
+    height: 90vh;
+
+    margin: 0px 15px 15px 15px;
+}
+
+.home-down{
+    text-align: center;
+    justify-content: center;
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+#h2{
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    background-color: #f5dbc4;
+}
+
+/*------Login Section------*/
+
+.container{
+    display:flex; 
+}
+
+.login-left,.login-right{
+    height:100vh;
+    width:100%;
+}
+.par{
+    font-size:20px;
+}
+.login-form-footer{
+    font-size:15px;
+}
+
+.book,.log{
+    font-size:30px;       
+}
+
+.login-left{
+    padding-top:15%;
+    font-weight:900;
+    padding-bottom:0%;
+}
+
+.login-right{
+    padding-top:1%;
+    font-weight:900;
+    padding-bottom:10%;
+}
+
+.field{
+    padding-left:100px;
+    text-align:left;
+    padding-bottom:10px;
+    padding-top:20px;
+    font-size:18px;
+}
+
+.input{
+    font-size:16px;
+}
+
+.toggle{
+    padding-top: 10px;
+}
+
+.alert-success{
+    padding-top: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
+}
+
+.alert-danger{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
+}
+
+/*------Team Section------*/
+
+#arnab,#sourav{
+    width:150px;
+    height:150px;
+}
+#sahil,#subham{
+    width:150px;
+    height:150px;
+}
+#subhra,#soumyajit{
+    width:150px;
+    height:150px;
+}
+
+.tag{
+    padding-top:30px;
+}
+
+.list{
+    background-color:#0B4619;    
+    width:100%;
+    display:flex;
+}
+
+.up,.down{
+    padding-top:15px;
+    justify-content:center;
+    width:100%;
+    display:flex;
+}
+
+.team-left{
+    margin:30px;
+    width:50%;
+    text-align:center;
+    border-radius:10px;
+    margin-bottom:0px;
+    display:block;
+    
+    justify-content:center;
+    padding-bottom:10px;
+}
+
+.team-right{
+    background-color:#0B4619;
+    padding-top:40px;
+    margin:0px;
+    padding:0px;
+    width:50%;
+}
+
+.team-vision{
+    padding-top:5%;
+}
+
+#social{
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#social2{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social{
+    text-align: center;
+}
+
+.box{
+    width:max-content;
+    height:270px;
+    text-align:center;
+    background-color:#0B4619;
+    border:3px solid #ffffff;
+}
+
+#name{
+    padding-top:10px;
+    font-size: 20px;
+    text-align:center;
+    color:#ffffff;
+}
+
+#msg{
+    margin-top:80px;
+    padding-bottom:5px;
+    padding-right:70px;
+    font-size: 40px;
+    text-align:center;
+    color:#ffffff;
+}
+
+#tp{
+    line-height: 2;
+    font-size:16px;
+    text-align:justify;
+    margin:0px 100px 50px 50px; 
+    color:#ffffff;
+    font-weight:400;
+}
+
+#tc{
+    text-align:center;
+    font-size:18px;
+    color:#ffffff;
+    font-weight:700;
+}
+
+}

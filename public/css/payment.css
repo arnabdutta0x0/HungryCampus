@@ -1,0 +1,131 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;700;900&display=swap');
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+  /**
+   * colors
+   */
+
+  --green: #0B4619;
+  --crimson: #D21312; 
+  --yellow: #FFCC1D; 
+  --cultured: #E8E8CC;
+  --white: #ffffff;
+  --black: #111;
+  --brown:#820000;
+  --spanish-gray: hsl(0, 0%, 60%);
+  --sonic-silver: hsl(0, 0%, 47%);
+}
+
+:root {
+    --green: #0B4619;
+    --crimson: #D21312; 
+    --yellow: #FFCC1D; 
+    --cultured: #E8E8CC;
+    --white: #ffffff;
+    --black: #111;
+    --brown: #820000;
+    --spanish-gray: hsl(0, 0%, 60%);
+    --sonic-silver: hsl(0, 0%, 47%);
+  }
+  
+  body {
+    background-color: var(--cultured);
+    font-family: Montserrat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    margin-top: 40px;
+  }
+  
+  .card-header {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  .card-body {
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--white);
+    padding: 20px;
+  }
+  
+  .alert {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid var(--spanish-gray);
+    border-radius: 4px;
+  }
+  
+  .alert-danger {
+    background-color: var(--crimson);
+    color: var(--white);
+  }
+  
+  .alert-success {
+    background-color: var(--green);
+    color: var(--white);
+  }
+  
+  .close {
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    color: var(--white);
+    opacity: 0.7;
+  }
+  
+  .close:hover {
+    color: var(--white);
+    opacity: 1;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .card-default {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px var(--sonic-silver);
+    width: 320px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  form .razorpay-payment-button {
+    background-color: var(--yellow);
+    color: var(--green);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto; /* Add this line */
+  }
+  
+  form .razorpay-payment-button:hover {
+    background-color: var(--brown);
+    color: var(--white);
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+  }
+  
