@@ -170,24 +170,26 @@ const file = document.querySelector('#file');
 const uploadbtn = document.querySelector('#bun');
 
 
-file.addEventListener( 'change' , function(){
+file.addEventListener('change', function () {
 
-    const chosedfile = this.files[0];
+  const chosedfile = this.files[0];
 
-    if(chosedfile){
+  if (chosedfile) {
 
-        const reader = new FileReader();
+    const reader = new FileReader();
 
-        reader.addEventListener( 'load' , function (){
-            img.setAttribute('src' , reader.result);
-        })
-    
-        reader.readAsDataURL(chosedfile);
-    }
+    reader.addEventListener('load', function () {
+      img.setAttribute('src', reader.result);
+    })
+
+    reader.readAsDataURL(chosedfile);
+  }
 })
 
 
+
 //-------------------------------------------------------------------------------------------------------
+
 
 // cart js section veg part 1
 
@@ -664,7 +666,7 @@ function addtocart(a) {
   displaycart();
 }
 
-function delElement(a){
+function delElement(a) {
   cart.splice(a, 1);
   displaycart();
 }
@@ -721,7 +723,7 @@ function displaycart() {
     const form = document.querySelector('#form'); // Replace 'your-form-id' with the actual ID of your form
     form.appendChild(hiddenInput);
 
-    
+
     document.querySelector('input[name="total"]').value = total;
     document.querySelector('input[name="productname"]').value = cart.map(item => item.title).join(', ');
     document.querySelector('input[name="productIdsString"]').value = productIds.join(',');

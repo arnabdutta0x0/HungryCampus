@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
 
-     
+
   <!--
     - favicon
   -->
@@ -43,50 +43,50 @@
                     <a href="#Dashboard" ><span class="bx bxs-dashboard"></span>
                     <span>Dashboard</span></a>
                 </li>
-            
+
                 <li>
                     <a href="#OrderAccepting" ><span class="bx bxs-badge-check"></span>
                     <span>Order Accepting</span></a>
                 </li>
-            
+
                 <li>
                     <a href="#SellingDishes"><span class="bx bxs-bowl-rice"></span>
                     <span>Selling Dishes</span></a>
                 </li>
-            
+
                 <li>
                     <a href="#Accounts"><span class="bx bxs-user-rectangle"></span>
                     <span>Accounts History</span></a>
                 </li>
-            
+
                 <li>
                     <a href="#Logout"><span class="bx bxs-log-out"></span>
                     <span>Log Out</span></a>
                 </li>
             </ul>
-            
+
         </div>
     </div>
 
      <!----------  Header Section  ---------->
 
     <header id="header">
-            
+
         <h1 id="headerTitle">
-        
+
             <label for="nav-toggle" class="nav-bu">
                 <span class="bx bx-menu"></span>
             </label>
-        
+
             <span id="mySpan">Dashboard</span>
 
         </h1>
 
         <div class="user-wrapper">
-        
+
             <img src="/image/id.png" width="40px" height="40px" alt="">
-        
-            <div>  
+
+            <div>
                 <h4>{{ $username }}</h4>
                 <small>Admin</small>
             </div>
@@ -257,31 +257,31 @@
                                     <div class="code-header">
                                         <h2>Enter the Order code</h2>
                                     </div>
-                                
+
                                     <div class="code-body">
-                                
+
                                         <div class="table-responsive">
-                                
+
                                             <div width="100%">
                                                 <div class="order-code">
                                                     <div id="wrapper">
-                                
+
                                                         <h5 id="tag">Enter the 4 digit code to get the order Details</h5>
 
                                                         <form action="{{ route('verifyCode') }}" method="POST" autocomplete="off">
-                                                            
+
                                                             @csrf
                                                             <div id="form">
-                                                                
+
                                                                 <input type="text" name="ip1" maxlength="1" pattern="[a-z]{1}" />
                                                                 <input type="text" name="ip2" maxlength="1" pattern="[a-z]{1}" />
                                                                 <input type="text" name="ip3" maxlength="1" pattern="[a-z]{1}" />
                                                                 <input type="text" name="ip4" maxlength="1" pattern="[a-z]{1}" />
-                                                                
+
                                                                 <div class="code-button">
                                                                     <button class="btn btn-primary btn-embossed" id="bu">Verify</button>
                                                                 </div>
-                                                                
+
                                                                 @if($errors->any())
                                                                     <div class="alert alert-danger">
                                                                         <ul>
@@ -293,17 +293,17 @@
                                                                 @endif
 
                                                             </div>
-                                                            
+
                                                         </form>
-                                                       
+
                                                     </div>
 
                                                 </div>
 
                                             </div>
-                                
+
                                         </div>
-                                
+
                                     </div>
 
                                 </table>
@@ -324,7 +324,7 @@
 
     <!----------  Selling Secction  ---------->
 
-    
+
     <div class="main-content" id="SellingDishes">
 
         <div class="main2">
@@ -562,25 +562,25 @@
                                     <div class="code-header">
                                         <h2>Don't worry your data will be safe here :)</h2>
                                     </div>
-                                
+
                                     <div class="code-body">
-                                
+
                                         <div class="table-responsive">
-                                
+
                                             <div width="100%">
                                                 <div class="order-code">
                                                     <div id="wrapper2">
 
                                                         <img src="/image/confused.png" width="150">
-                                
+
                                                         <h5 id="tag2">Do you really want to Logout?</h5>
-                                                       
+
                                                         <div id="form2">
 
                                                             <div class="code-button2">
                                                                 <button class="btn btn-primary btn-embossed" id="bu1">No</button>
                                                             </div>
-                                                            
+
                                                             <div class="code-button3">
                                                             <form action="{{ route('logout') }}" method="POST">
                                                                 @csrf
@@ -590,17 +590,17 @@
                                                                 <button class="btn btn-primary btn-embossed" id="bu">Yes</button>
                                                             </form>
                                                             </div>
-                                                            
+
                                                         </div>
-                                                       
+
                                                     </div>
 
                                                 </div>
 
                                             </div>
-                                
+
                                         </div>
-                                
+
                                     </div>
 
                                 </table>

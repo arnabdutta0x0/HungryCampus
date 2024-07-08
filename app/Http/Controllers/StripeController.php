@@ -25,7 +25,7 @@ class StripeController extends Controller
         // Store the values in session variables
         session()->put('productname', $productname);
         session()->put('totalprice', $totalprice);
-        session()->put('productIdsString', $productIdsString); 
+        session()->put('productIdsString', $productIdsString);
 
         // The rest of your existing code...
         \Stripe\Stripe::setApiKey(config('stripe.sk'));
@@ -80,24 +80,24 @@ class StripeController extends Controller
     private function storeCode($email, $code, $productIdsString)
     {
         $expiresAt = Carbon::now()->addHours(1);
-    
+
         CodeValidation::create([
             'email' => $email,
             'code' => $code,
             'product_id' => $productIdsString, // Store the product IDs as a comma-separated string
             'expires_at' => $expiresAt,
         ]);
-    
+
         // Send the email with the code
         $this->sendCodeConfirmation($email, $code);
     }
-    
+
     private function sendCodeConfirmation($email, $code)
     {
         $data = [
             'code' => $code,
         ];
-    
+
         Mail::send('emails.payment_confirmation', $data, function ($message) use ($email) {
             $message->to($email)->subject('Payment Confirmation');
         });
@@ -120,11 +120,11 @@ class StripeController extends Controller
     {
         // Get the code entered in the form
         $code = $request->input('ip1') . $request->input('ip2') . $request->input('ip3') . $request->input('ip4');
-    
+
         // Query the code_validations table to check if the code exists
         $codeValidation = CodeValidation::where('code', $code)->first();
 
-        
+
         if ($codeValidation) {
 
             $orderDetails = CodeValidation::where('code', $code)->first();
@@ -140,20 +140,20 @@ class StripeController extends Controller
             return redirect()->back()->withErrors(['code' => 'Invalid code']);
         }
     }
-    
+
     public function orderConfirm(Request $request)
     {
         $action = $request->input('action');
         $code = $request->input('code');
         $productid = $request->input('productid');
-        
+
         if ($action === 'yes' && $code) {
             CodeValidation::where('code', $code)->delete();
             return redirect()->route('admin');
         } else {
             return redirect()->route('admin');
         }
-    
+
     }
-    
+
 }

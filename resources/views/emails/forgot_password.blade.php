@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Confirmation</title>
+    <title>Forgot Password</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -61,10 +61,10 @@
 <body>
     <div class="container">
         <img src="/image/logo/HC.jpg" alt="Logo" class="logo" width="100">
-        <h2>Payment Confirmation</h2>
-        <p class="thank-you">Thank you for choosing our service!</p>
-        <p>Your 4-digit code is: <span class="code">{{ $code }}</span></p>
-        <p>We appreciate your trust in our platform. Enjoy your meal!</p>
+        <h2>Forgot Password</h2>
+        <p class="thank-you">You've requested to reset your password.</p>
+        <p>Your verification code is: <span class="code">{{ $code }}</span></p>
+        <p>If you didn't request this, please ignore this email.</p>
     </div>
 </body>
 </html>

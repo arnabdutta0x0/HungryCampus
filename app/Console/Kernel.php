@@ -18,13 +18,13 @@ class Kernel extends ConsoleKernel
     {
         $schedule->call(function () {
             $expiredCodes = CodeValidation::where('expires_at', '<=', now())->get();
-    
+
             foreach ($expiredCodes as $code) {
                 event(new \App\Events\CodeExpired($code));
             }
         })->everyMinute();
     }
-    
+
 
     /**
      * Register the commands for the application.

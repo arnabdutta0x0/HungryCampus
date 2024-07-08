@@ -299,6 +299,13 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   padding: 10px;
 }
 
+.mobile-bottom-navigation .logout-btn {
+  position: relative;
+  font-size: 26px;
+  color: var(--green);
+  padding: 10px;
+}
+
 .mobile-bottom-navigation .count {
   background: var(--bittersweet);
   color: var(--white);
@@ -2879,6 +2886,13 @@ footer {
   }
 
   .header-user-actions .action-btn {
+    position: relative;
+    font-size: 35px;
+    color: var(--onyx);
+    padding: 5px;
+  }
+
+  .header-user-actions .logout-btn {
     position: relative;
     font-size: 35px;
     color: var(--onyx);

@@ -1,10 +1,11 @@
 <?php
 
+use App\Http\Controllers\forgotPassword;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Models\CodeValidation;
 use App\Http\Controllers\StripeController;
-
+use App\Http\Controllers\ForgotPasswordController;
 
 // Routes that do not require authentication
 Route::get('/', function () {
@@ -17,6 +18,7 @@ Route::post('/signin', [UserController::class, 'signin'])->name('signin');
 
 
 Route::post('/verify-code', [StripeController::class, 'verifyCode'])->name('verifyCode');
+
 Route::match(['GET', 'POST'], '/order-confirm', [StripeController::class, 'orderConfirm'])->name('orderConfirm');
 
 
@@ -33,3 +35,18 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/admin', [UserController::class, 'profileShowAdmin'])->name('admin');
     Route::get('/profileShow', [UserController::class, 'profileShow'])->name('profileShow');
 });
+
+
+
+
+// FORGOT PASSWORD ROUTES
+
+Route::get('/forgot', function () {
+    return view('forgot');
+})->name('forgot');
+
+Route::post('/verify-Email', [ForgotPassword::class, 'sendForgotPasswordEmail'])->name('forgot.verify');
+
+Route::post('/verify-Password', [ForgotPassword::class, 'verifyCode'])->name('forgot.update');
+
+Route::post('/Confirm-Password', [ForgotPassword::class, 'confirmPass'])->name('forgot.cp');

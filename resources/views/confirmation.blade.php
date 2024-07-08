@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
 
-     
+
   <!--
     - favicon
   -->
@@ -30,7 +30,7 @@
   <section class="success">
 
     <div class="ps">
-        
+
       <h1>Payment successful<span class="bx bxs-badge-check"></h1>
       <h3>Please check your email for the FOOD CODE and redeem it at the canteen within 72 hours.</h3>
       <button id="lol" type="submit" onclick="goBack()">GO BACK</button>
