@@ -544,7 +544,7 @@ tbody td {
   }
 
   #bu {
-    margin: 0px 0 50px;
+    margin: 30px 0 50px;
     width: 80%;
     padding: 10px;
     background-color: var(--navy);
@@ -682,7 +682,7 @@ tbody td {
   }
 
   #bu {
-    margin: 0px 0 50px;
+    margin: 30px 0 50px;
     width: 80%;
     padding: 10px;
     background-color: var(--navy);
@@ -738,7 +738,7 @@ tbody td {
   .user-wrapper {
     display: flex;
     align-items: center;
-    padding-left: 35px;
+    padding-left: 10px;
   }
 
   .user-wrapper img {
